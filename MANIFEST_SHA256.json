@@ -2,6 +2,11 @@
   "version": "1.2",
   "files": [
     {
+      "path": ".gitattributes",
+      "size": 162,
+      "sha256": "c01fc93c7186de069678516e8a2c61a7841b8c47574b1d73ad8e660e51bef0b3"
+    },
+    {
       "path": ".github/workflows/validate.yml",
       "size": 1186,
       "sha256": "9c4e1defab164a3c8e60290a10d9110abf5ae03aa7be52804472b7dbad9f660d"

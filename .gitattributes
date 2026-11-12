@@ -1,0 +1,3 @@
+# Preserve exact released bytes: input and native-cache integrity use checksums.
+# In particular, Windows Git must not turn LF into CRLF during checkout.
+* -text

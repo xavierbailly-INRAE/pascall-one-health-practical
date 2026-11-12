@@ -252,9 +252,84 @@
       "sha256": "4d119b34328b6c413f9c5ccbcebc372ef962c25d0f2918444781c16e613cc2a9"
     },
     {
+      "path": "rescue/native/01_sampling.pdf",
+      "size": 4746,
+      "sha256": "888e90d826ea563bb1ea1f36b8f244d8114cfb3bca2f938dacd8168626207310"
+    },
+    {
+      "path": "rescue/native/01_sampling.png",
+      "size": 42074,
+      "sha256": "fae2b1ebf0fbc4190190a783c9770b1a7b7040fb143077008b918cdf3ea85a43"
+    },
+    {
+      "path": "rescue/native/02_rooted_tree.pdf",
+      "size": 15308,
+      "sha256": "17b1fcc71faa801868d6ec35f9700bcda3e9f130d48eec27c6ad9918dd458f2c"
+    },
+    {
+      "path": "rescue/native/02_rooted_tree.png",
+      "size": 27811,
+      "sha256": "66e44f2bd2ff1e84743afe1406ade79f49ce0f6efe3f6e7f39c3b7e1b26b2aaa"
+    },
+    {
+      "path": "rescue/native/03_clock_pooled.pdf",
+      "size": 11148,
+      "sha256": "68bc9b9ca57471fbbee09d62ce6072b164deb70a12f898529cd236f598196166"
+    },
+    {
+      "path": "rescue/native/03_clock_pooled.png",
+      "size": 45244,
+      "sha256": "f9a7a63954deac3a93a6636db0d5ac62c3f9035d7a07a9c1d401f085d0e8e23f"
+    },
+    {
+      "path": "rescue/native/04_clock_by_outbreak.pdf",
+      "size": 11938,
+      "sha256": "1bca8acf9b2aacd3d91d8c0304fa2bc1fbacfb55f4cd46fbdddbd89f79e49def"
+    },
+    {
+      "path": "rescue/native/04_clock_by_outbreak.png",
+      "size": 45437,
+      "sha256": "2108370661535362153907d045f0a4c766d142eca7319f74162455e665dd6862"
+    },
+    {
+      "path": "rescue/native/05_dated_relaxed.pdf",
+      "size": 8778,
+      "sha256": "12a5c9b107bc68ff9bacce71f9e16a6bdc2011bbb96c6276e184bdf0631e339e"
+    },
+    {
+      "path": "rescue/native/05_dated_relaxed.png",
+      "size": 20160,
+      "sha256": "a445899975c4ace927e229816958dc99a8e98b11b3438b0de747d89825001bcc"
+    },
+    {
+      "path": "rescue/native/05_dated_strict.pdf",
+      "size": 8898,
+      "sha256": "b0639f93a944e2b039fa9d21a0878228cc8872287a6d43c0be02b8e09f9b4f06"
+    },
+    {
+      "path": "rescue/native/05_dated_strict.png",
+      "size": 20905,
+      "sha256": "3a0de451adac327334a8b076038cc57cca03f0265de2eb923df2b9c743fda4a5"
+    },
+    {
+      "path": "rescue/native/06_branch_rates.pdf",
+      "size": 17479,
+      "sha256": "feca398afe7c06b5a120ba64bd43565fa935bd7439b53ad246740de31ea595b8"
+    },
+    {
+      "path": "rescue/native/06_branch_rates.png",
+      "size": 39086,
+      "sha256": "1ec4ae5fb296b90e716019c4da7a03633984b420d00d06b7fedd5693beb254b7"
+    },
+    {
+      "path": "rescue/native/PROVENANCE.txt",
+      "size": 1770,
+      "sha256": "dfe3b2daeddc952cfa949fa3ee5c8411de26ff519f327a9516be56a686e1c4d6"
+    },
+    {
       "path": "rescue/native/README.txt",
-      "size": 216,
-      "sha256": "a4c969be82833318e3f92ab0b98e800b9d58b9686a8f1d46e57ff7a8c0580922"
+      "size": 327,
+      "sha256": "2b02af29b3ecdc29b70fb5109ae62329f17e0834050b012676c20a76c5d7704f"
     },
     {
       "path": "rescue/native/lesson.rds",

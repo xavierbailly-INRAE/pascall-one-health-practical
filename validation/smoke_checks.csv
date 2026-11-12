@@ -1,0 +1,25 @@
+"test","passed"
+"native_gate_READY",TRUE
+"graphics_and_sink_restored",TRUE
+"13_native_checks",TRUE
+"rtt pairwise_distances",TRUE
+"rtt pooled independent_OLS",TRUE
+"rtt first independent_OLS",TRUE
+"rtt second independent_OLS",TRUE
+"midpoint pairwise_distances",TRUE
+"midpoint pooled independent_OLS",TRUE
+"midpoint first independent_OLS",TRUE
+"midpoint second independent_OLS",TRUE
+"native rescue",TRUE
+"reference rescue",TRUE
+"optional_date_sensitivity_and_lineages",TRUE
+"midpoint_full_route",TRUE
+"reject negative_rate",TRUE
+"reject old_code",TRUE
+"reject unvalidated",TRUE
+"reject_changed_input",TRUE
+"invalidate_stale_READY",TRUE
+"invalidate_stale_cache",TRUE
+"record_preflight_error",TRUE
+"failure_restores_graphics_and_sink",TRUE
+"final_graphics_and_sink_restored",TRUE

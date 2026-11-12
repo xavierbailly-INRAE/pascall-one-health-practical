@@ -1,0 +1,3 @@
+R version 4.5.2 (2025-10-31)
+Linux
+Elapsed seconds: 6.142

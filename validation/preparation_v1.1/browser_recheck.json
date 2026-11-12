@@ -1,0 +1,13 @@
+{
+  "load_mode": "exact HTML loaded through set_content; file:// navigation unavailable",
+  "five_stages": true,
+  "two_tree_images": true,
+  "four_regression_views": true,
+  "ols_max_abs_difference": 3.042011087472929e-14,
+  "code_disclosure": true,
+  "notes_export": true,
+  "mobile_no_horizontal_overflow": true,
+  "images_loaded": true,
+  "js_errors": [],
+  "external_requests": []
+}

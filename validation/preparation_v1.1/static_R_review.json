@@ -1,0 +1,36 @@
+{
+  "scope": "Lexical balance and code-inspection safeguards only; NOT R parsing or native runtime validation",
+  "files": [
+    {
+      "file": "00_install_check.R",
+      "balanced_delimiters_and_strings": true
+    },
+    {
+      "file": "Pascall_rescue.R",
+      "balanced_delimiters_and_strings": true
+    },
+    {
+      "file": "RUN_R_CHECKS.R",
+      "balanced_delimiters_and_strings": true
+    },
+    {
+      "file": "OPTIONAL_extensions.R",
+      "balanced_delimiters_and_strings": true
+    },
+    {
+      "file": "run_without_rstudio.R",
+      "balanced_delimiters_and_strings": true
+    },
+    {
+      "file": "Pascall_student.R",
+      "balanced_delimiters_and_strings": true
+    },
+    {
+      "file": "R/housekeeping.R",
+      "balanced_delimiters_and_strings": true
+    }
+  ],
+  "no_automatic_cache_substitution": true,
+  "native_cache_supplied": false,
+  "omega0_scalar_condition_conflict_avoided": true
+}

@@ -1,0 +1,10 @@
+.R-library/
+.Rproj.user/
+.Rhistory
+.RData
+Rplots.pdf
+runs/
+rescue/previous_*/
+tests/output/
+__pycache__/
+*.pyc

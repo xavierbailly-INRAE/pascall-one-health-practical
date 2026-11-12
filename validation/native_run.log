@@ -1,0 +1,375 @@
+DATA SOURCE: LIVE R INFERENCE
+[1]   164 18079
+
+ first second 
+    95     69 
+                
+                 first second
+  Belgium            8      0
+  Denmark            3      0
+  France            36     69
+  Germany           18      0
+  Greece             1      0
+  Italy              3      0
+  Netherlands        9      0
+  Sweden             2      0
+  Switzerland        1      0
+  United Kingdom    14      0
+          ID   Date_min   Date_max    Date_av
+159 UKG07159 2007-02-01 2007-02-30 2007-02-15
+   group        slope descriptive_R2
+1 pooled 0.0001741131      0.7078470
+2  first 0.0006141781      0.6972734
+3 second 0.0006915037      0.9600871
+Note: Initial guess of substitution rate not provided. Will attempt to guess starting conditions. Provide initial guesses of the rate using *omega0* parameter. 
+Tree is rooted. Not estimating root position.
+Initial guesses of substitution rate: 0.000128964907054523,0.00014695489431654,0.000149947977239099,0.000155417139594518,0.000157774190771635,0.000160131241948752,0.000165600404304171,0.000166735383987765,0.000171891098024367,0.000174113062019788,0.000176335026015209,0.00018149074005181,0.000186583474488747,0.000201271229723036 
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+0         0           0.0001280212           0 2000.994 -677.2536
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+1         1           0.0001270844           0 2000.944 -677.8704
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+0         0           0.0001458795           0 2001.826 -666.4596
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+1         1           0.0001448121           0 2001.782 -667.0566
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+0         0           0.0001895408           0 2001.945 -652.7015
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+1         1            0.000228844           0 2003.118 -599.2958
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+2         2           0.0002678595           0 2003.859 -580.4499
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+3         3           0.0003065895           0 2004.379 -569.4262
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca   logLik
+4         4           0.0003463664           0 2004.762 -566.789
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+5         5            0.000384522           0 2005.067 -582.2528
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+0         0             0.00019497           0 2002.151 -650.1042
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+1         1           0.0002342334           0 2003.238 -594.2484
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca   logLik
+2         2           0.0002732095           0 2003.941 -578.391
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+3         3           0.0003119003           0 2004.438 -568.2343
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+4         4           0.0003512644           0 2004.808 -567.2028
+---
+  iteration median_unadjusted_rate coef_of_var  tmrca    logLik
+5         5           0.0003893841           0 2005.1 -582.7063
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+0         0           0.0001973098           0 2002.235 -649.0364
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+1         1           0.0002365561           0 2003.288 -592.6801
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+2         2           0.0002755152           0 2003.975 -577.6222
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+3         3           0.0003141892           0 2004.463 -567.8492
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+4         4           0.0003533635           0 2004.827 -567.4459
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+5         5           0.0003914678           0 2005.113 -582.9169
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+0         0           0.0001996496           0 2002.317 -647.9983
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+1         1           0.0002388787           0 2003.337 -591.2757
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca   logLik
+2         2           0.0002778208           0 2004.009 -576.909
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+3         3            0.000316478           0 2004.488 -567.5179
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+4         4           0.0003554554           0 2004.845 -567.7321
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+0         0           0.0002050787           0 2002.495 -645.0751
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+1         1           0.0002442682           0 2003.445 -588.4943
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+2         2           0.0002831708           0 2004.084 -575.4351
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca   logLik
+3         3           0.0003217888           0 2004.543 -566.923
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+4         4            0.000360282           0 2004.888 -568.5875
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+0         0           0.0002062054           0 2002.528 -644.2956
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+1         1           0.0002453866           0 2003.467 -587.9865
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+2         2           0.0002842811           0 2004.099 -575.1574
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+3         3           0.0003228909           0 2004.554 -566.8302
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+4         4           0.0003612788           0 2004.896 -568.8037
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca  logLik
+0         0           0.0002113234           0 2002.675 -622.19
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca   logLik
+1         1           0.0002504671           0 2003.563 -585.939
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+2         2           0.0002893244           0 2004.167 -574.0564
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+3         3           0.0003278974           0 2004.604 -566.5229
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+4         4           0.0003661881           0 2004.935 -570.0305
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+0         0           0.0002135291           0 2002.736 -617.2786
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+1         1           0.0002526567           0 2003.603 -585.1824
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca  logLik
+2         2            0.000291498           0 2004.195 -573.29
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+3         3            0.000330055           0 2004.625 -566.4413
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+4         4           0.0003683299           0 2004.951 -570.6981
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+0         0           0.0002157348           0 2002.795 -613.6491
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+1         1           0.0002548462           0 2003.642 -584.5043
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+2         2           0.0002936715           0 2004.223 -572.5984
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+3         3           0.0003322127           0 2004.646 -566.3896
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+4         4           0.0003704718           0 2004.967 -571.4775
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+0         0           0.0002208528           0 2002.927 -607.5421
+---
+  iteration median_unadjusted_rate coef_of_var   tmrca    logLik
+1         1           0.0002599268           0 2003.73 -583.3117
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+2         2           0.0002987149           0 2004.286 -571.3324
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+3         3           0.0003372191           0 2004.693 -566.3817
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+4         4           0.0003754416           0 2005.004 -573.9464
+---
+  iteration median_unadjusted_rate coef_of_var   tmrca    logLik
+0         0           0.0002259082           0 2003.05 -602.9525
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+1         1           0.0002649453           0 2003.812 -581.8146
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+2         2           0.0003036966           0 2004.345 -570.3685
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+3         3           0.0003436822           0 2004.737 -566.6447
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+4         4           0.0003818574           0 2005.049 -581.6482
+---
+  iteration median_unadjusted_rate coef_of_var   tmrca    logLik
+0         0           0.0002404885           0 2003.37 -590.3815
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+1         1           0.0002794188           0 2004.032 -576.4438
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+2         2           0.0003180643           0 2004.504 -567.3161
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+3         3           0.0003569011           0 2004.858 -567.9579
+---
+
+NOTE: The p values for lineage clock rates show at least one outlying value after adjusting for multiple-testing.  This indicates a poor fit to the data for at least a portion of the phylogenetic tree. To visualize the distribution p-values, use *goodnessOfFitPlot*.
+		
+
+The following steps may help to fix or alleviate common problems:
+* Check that the vector of sample times is correctly named and that the units are correct.
+* If passing a rooted tree, make sure that the root position was chosen correctly, or estimate the root position by passing an unrooted tree (e.g. pass ape::unroot(tree))
+* The root position may be poorly estimated. Try increasing the _searchRoot_ parameter in order to test more lineages as potential root positions.
+* The model may be fitted by a relaxed or strict molecular clock. Try changing the _clock_ parameter
+* A poor fit may be due to a small number of lineages with unusual / outlying branch lengths which can occur due to sequencing error or poor alignment. Try the *outlierTips* command to identify and remove these lineages.
+* Check that there is adequate variance in sample times in order to estimate a molecular clock by doing a root-to-tip regression. Try the *rootToTipRegressionPlot* command. If the clock rate can not be reliably estimated, you can fix the value to a range using the _meanRateLimits_ option which would estimate a time tree given the previous estimate of clock rates.
+Note: Initial guess of substitution rate not provided. Will attempt to guess starting conditions. Provide initial guesses of the rate using *omega0* parameter. 
+Tree is rooted. Not estimating root position.
+Initial guesses of substitution rate: 0.000128964907054523,0.00014695489431654,0.000149947977239099,0.000155417139594518,0.000157774190771635,0.000160131241948752,0.000165600404304171,0.000166735383987765,0.000171891098024367,0.000174113062019788,0.000176335026015209,0.00018149074005181,0.000186583474488747,0.000201271229723036 
+  iteration median_unadjusted_rate coef_of_var    tmrca logLik
+0         0           9.789072e-05   0.5048752 2000.994 -612.7
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+1         1            8.27528e-05    0.461354 2000.111 -527.7895
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+2         2           6.657137e-05   0.4932243 1998.989 -531.4395
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+0         0           0.0001137783   0.4753631 2001.826 -607.0756
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+1         1           9.659357e-05   0.4348754 2001.061 -524.1602
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+2         2           7.832338e-05   0.4666408 2000.101 -529.1647
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+0         0           0.0001163714   0.4712141 2001.945 -606.2179
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+1         1           9.890351e-05   0.4305953 2001.197 -523.5905
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+2         2           8.033135e-05   0.4623281 2000.258 -529.1867
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+0         0           0.0001211999   0.4635664 2002.151 -604.7023
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+1         1           0.0001032289   0.4230439 2001.432 -522.5871
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca   logLik
+2         2           8.405421e-05   0.4545586 2000.532 -529.068
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+0         0           0.0001232606   0.4605572 2002.235 -604.0693
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+1         1            0.000105088   0.4200228 2001.528 -522.0369
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca   logLik
+2         2           8.562646e-05   0.4514529 2000.645 -528.374
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+0         0           0.0001253176   0.4574312 2002.317 -603.4482
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+1         1           0.0001069362   0.4169237 2001.621 -521.3399
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+2         2            8.72423e-05   0.4482433 2000.753 -527.7396
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+0         0           0.0001302405   0.4500232 2002.495 -601.4465
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+1         1           0.0001113171   0.4099006 2001.826 -520.0094
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca   logLik
+2         2           9.103902e-05   0.4408224 2000.993 -526.333
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+0         0           0.0001312425   0.4485977 2002.528 -600.8623
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+1         1            0.000112191   0.4087499 2001.865 -519.7537
+---
+  iteration median_unadjusted_rate coef_of_var   tmrca    logLik
+2         2           9.186878e-05   0.4391077 2001.04 -526.0268
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+0         0           0.0001363623   0.4363231 2002.675 -579.7183
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+1         1           0.0001166139   0.4009484 2002.042 -518.9202
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+2         2           9.556821e-05   0.4321802 2001.251 -524.9015
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+0         0            0.000138618   0.4306279 2002.736 -575.2049
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+1         1           0.0001183975   0.3982049 2002.114 -518.6984
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+2         2           9.719257e-05   0.4290268 2001.338 -524.4084
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+0         0           0.0001408424   0.4254335 2002.795 -571.9574
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+1         1           0.0001202641   0.3951411 2002.185 -518.5295
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+2         2           9.879421e-05   0.4261525 2001.422 -523.9396
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+0         0           0.0001460339   0.4139617 2002.927 -566.6802
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+1         1           0.0001246685   0.3880363 2002.343 -518.4312
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+2         2           0.0001026267   0.4190352 2001.612 -522.8709
+---
+  iteration median_unadjusted_rate coef_of_var   tmrca    logLik
+0         0           0.0001508051   0.4047301 2003.05 -562.8371
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+1         1           0.0001288683   0.3817595 2002.489 -517.3409
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca   logLik
+2         2           0.0001062892   0.4127452 2001.785 -521.839
+---
+  iteration median_unadjusted_rate coef_of_var   tmrca    logLik
+0         0            0.000164702   0.3814405 2003.37 -552.0346
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+1         1           0.0001410755   0.3647932 2002.869 -514.4395
+---
+  iteration median_unadjusted_rate coef_of_var    tmrca    logLik
+2         2           0.0001172384   0.3943874 2002.235 -519.0123
+---
+         clock root_year    mean_rate   rate_CV
+1       strict  2004.693 0.0003372191 0.0000000
+2 uncorrelated  2002.869 0.0001954554 0.3647932
+   parent child start_year end_year duration_years genetic_length  fitted_rate
+22    242   243   2006.256 2011.728       5.471714     0.00033285 7.353964e-05
+   diagnostic_CDF
+22      0.0866563
+Stem rate / median fitted branch rate: 0.5212787 
+Live results saved in: runs/live_34f0a5ebb 
+
+READY: native R checks passed. Native rescue snapshot created.

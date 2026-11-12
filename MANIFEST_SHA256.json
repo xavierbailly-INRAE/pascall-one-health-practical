@@ -1,0 +1,380 @@
+{
+  "version": "1.2",
+  "files": [
+    {
+      "path": ".github/workflows/validate.yml",
+      "size": 1186,
+      "sha256": "9c4e1defab164a3c8e60290a10d9110abf5ae03aa7be52804472b7dbad9f660d"
+    },
+    {
+      "path": ".gitignore",
+      "size": 111,
+      "sha256": "d69bc5871ec89491442c3d51af4de1463f55fb433c82e1826a9391860e32657e"
+    },
+    {
+      "path": "00_install_check.R",
+      "size": 825,
+      "sha256": "f208c65130da49b4f24c81f6bfeec4c30a2b36a2959de5388414eb3eec10e820"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "size": 601,
+      "sha256": "6bdc8bf1ca4087462c1f84144694a0a98da7330c8bb9249d699a6a69239f869c"
+    },
+    {
+      "path": "DELIVERY_STATUS.md",
+      "size": 1191,
+      "sha256": "d3dab04d9c92edc0aa11b468bd065ccdeeaff327d63900e99b556e63924de70c"
+    },
+    {
+      "path": "OPTIONAL_extensions.R",
+      "size": 2004,
+      "sha256": "45f0a2a96050edc4d0503cfa50e9bd24f1f0d9a045e94b14ac91355f5f135798"
+    },
+    {
+      "path": "Pascall_rescue.R",
+      "size": 2178,
+      "sha256": "9678051e360e5068819050c2d9cc1c955c1fdc27d52399abe9432d3117b9d449"
+    },
+    {
+      "path": "Pascall_student.R",
+      "size": 10536,
+      "sha256": "4e354161a2d14aafb7ce19fc081440f592fa04927086308e54ecd9e939723344"
+    },
+    {
+      "path": "Pascall_student.Rproj",
+      "size": 187,
+      "sha256": "c58c21c3296caafe3105d3fce3f1a1bb45f8b460e32fd137ebf5a9b2eef7d51a"
+    },
+    {
+      "path": "QUICK_START_FR.md",
+      "size": 975,
+      "sha256": "ab6a4f701b67e2c986aeccb807b99b3932488d740ecebb535f0af3771cc19081"
+    },
+    {
+      "path": "R/housekeeping.R",
+      "size": 4300,
+      "sha256": "9aab8df8fa81da7fc490e6c29bc5011d9ab540d1fc623be07c23ea2cbed4e63d"
+    },
+    {
+      "path": "README.md",
+      "size": 2866,
+      "sha256": "94776dc587ffb618b9ac02b502cf51ef1d6c2b45b904bedee23d20c5442522b6"
+    },
+    {
+      "path": "RUN_R_CHECKS.R",
+      "size": 4176,
+      "sha256": "0ba4b7431e1dc3abea8ae3b69a018013df64a0dff43a3b9022e5373fe67259bd"
+    },
+    {
+      "path": "SOURCES.md",
+      "size": 3920,
+      "sha256": "aa76501b8a39c6ebb18f8c69d0315882c922e582c53a46cd976e1632131291d3"
+    },
+    {
+      "path": "START_HERE.txt",
+      "size": 881,
+      "sha256": "6c09f76e56a1ccf66bb06ff43436f4824bff5a972d13a2a6f6b992535f7cf515"
+    },
+    {
+      "path": "VERSION.txt",
+      "size": 4,
+      "sha256": "44804414f85bef9588f60086587fd6e8871b39123c831ec129624f4d81a95fea"
+    },
+    {
+      "path": "data/INPUT_MD5.csv",
+      "size": 229,
+      "sha256": "2623fe72d0c1b0850564e1e63cffa2429e189c3d3e0780f3e3e6e4e69b60ca30"
+    },
+    {
+      "path": "data/alignment.fasta",
+      "size": 3003660,
+      "sha256": "67c8c3657b7ec86bf981bb83ca12f99cfa5bba702a67402d83b420b098eccf40"
+    },
+    {
+      "path": "data/metadata.csv",
+      "size": 23082,
+      "sha256": "41b568adc2478b37ab93c9ba75895e65343827cac4b6cd87392718e828ad57a4"
+    },
+    {
+      "path": "data/ml_F84_I_G_164.nwk",
+      "size": 5376,
+      "sha256": "ad1a46d51fc97e8e250313f8f20cc89d488b43b9db58507bc10eead85d9d98d7"
+    },
+    {
+      "path": "data/model_runs.csv",
+      "size": 1774,
+      "sha256": "eed826833a6b66033daed1e205b558570e9c444aa7959d1abfc534cbbcf3f87a"
+    },
+    {
+      "path": "docs/.nojekyll",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/Installation_EN.html",
+      "size": 4479,
+      "sha256": "57d5692ad8c6f4ddc9ca421912bf4cbf3a02dde9fa5ef1714a89cd6639e198e7"
+    },
+    {
+      "path": "docs/Installation_EN.pdf",
+      "size": 23209,
+      "sha256": "1997ed80a2a1669c399bbe06cb13666790e1d11e53856549b3f406df259ed951"
+    },
+    {
+      "path": "docs/Pascall_2020_original.pdf",
+      "size": 2038006,
+      "sha256": "d6969da8bb385ec168298f66f02aa09caec936b01babf038531ede3a3e68d17a"
+    },
+    {
+      "path": "docs/Pascall_code_EN.html",
+      "size": 12199,
+      "sha256": "2c987cac2d93f760cf811f4e95b57e85c201006428ca6e621f6809042e5d1767"
+    },
+    {
+      "path": "docs/Pascall_code_EN.pdf",
+      "size": 25817,
+      "sha256": "228760f1b1d7b57c0609a371fa37953d5e919b4d898a0a34e0331ba6b0bed5ca"
+    },
+    {
+      "path": "docs/Pascall_offline_EN.html",
+      "size": 760420,
+      "sha256": "0ad4d4a09d99f45cf8afcdc6375bb14a7bbbea786f43a6cc0044aa11e08ea6c2"
+    },
+    {
+      "path": "docs/Pascall_offline_figures_EN.html",
+      "size": 4382,
+      "sha256": "01dcc8ff849915f2ee53e45c6bc21e0639422139240fc82c8c52015342c16011"
+    },
+    {
+      "path": "docs/Pascall_offline_figures_EN.pdf",
+      "size": 763277,
+      "sha256": "839cc899957c8edb7f01b72f54b0d16833b7e6ba59c87b6422bf6fc13658e6f5"
+    },
+    {
+      "path": "docs/Pascall_student_EN.html",
+      "size": 10879,
+      "sha256": "85b53411a1827b72a4caae569b1fa5631ee7e82fe1ebcec0d80534569f61679f"
+    },
+    {
+      "path": "docs/Pascall_student_EN.pdf",
+      "size": 35134,
+      "sha256": "af19093daaf169f5887fb3ecd73ab4cb278eabda87b6dfa1df600bd98af2aab5"
+    },
+    {
+      "path": "docs/index.html",
+      "size": 760420,
+      "sha256": "0ad4d4a09d99f45cf8afcdc6375bb14a7bbbea786f43a6cc0044aa11e08ea6c2"
+    },
+    {
+      "path": "docs/print.css",
+      "size": 1736,
+      "sha256": "882b888d2d7ddab158409acf35522cdf6512d761d8edb7403ee3ae454cf7ef7a"
+    },
+    {
+      "path": "figures/01_sampling.png",
+      "size": 47330,
+      "sha256": "b0312012ddcce11ce0dc90eac60c4db4dd1b66cbf22dc1c68121161eafb58774"
+    },
+    {
+      "path": "figures/02_tree_midpoint.png",
+      "size": 73441,
+      "sha256": "c5069489c93aab9fa695acb76c4d68fda00cd5308890694e7a75f76e5080b881"
+    },
+    {
+      "path": "figures/02_tree_rtt.png",
+      "size": 72800,
+      "sha256": "59f58584df8d2e294968abea37b9259fa540783ba8d9e9ba0ed0b244d6f0711f"
+    },
+    {
+      "path": "figures/03_clock_midpoint_pooled.png",
+      "size": 102527,
+      "sha256": "c7fd632ff4d63ec4f0bff3d5b844113c604725b6c9adca1b17272887bf5c182c"
+    },
+    {
+      "path": "figures/03_clock_midpoint_separate.png",
+      "size": 109574,
+      "sha256": "88e2ff9e100fd9f4aecf1a851f7844581839d6a23c1e40c87d6559cec1091900"
+    },
+    {
+      "path": "figures/03_clock_rtt_pooled.png",
+      "size": 107419,
+      "sha256": "549aec7e08e5e6dcb72febab461a246450b8cd07c2fbda6d91669592b93f0c4d"
+    },
+    {
+      "path": "figures/03_clock_rtt_separate.png",
+      "size": 109923,
+      "sha256": "440638be4892fab623ac0aa7eb57394ca1a29d293393eabbdd8af5bfae4a5630"
+    },
+    {
+      "path": "figures/04_published_time_tree.png",
+      "size": 279745,
+      "sha256": "5cce12eb63ebd8a04f54db8d2bf9b26121ec8df1d793186cc10bd2ae3c77d99e"
+    },
+    {
+      "path": "figures/05_published_temporal_signal.png",
+      "size": 48390,
+      "sha256": "365325002ce4842cdcf852fa5b4ba4b7f5606dd2fa2ac4a81679fa0f0bc4fb57"
+    },
+    {
+      "path": "reference/PROVENANCE.txt",
+      "size": 273,
+      "sha256": "2e2590cadc3680cbd1444b96f504979854a75f1ae836821ea3b4905d1ba75207"
+    },
+    {
+      "path": "reference/alignment_coverage.csv",
+      "size": 169597,
+      "sha256": "b4d752ab6042ce02145f7bb42dcbdfb97893c90f99daee2e0d5bccadf474234c"
+    },
+    {
+      "path": "reference/regression_summary.csv",
+      "size": 518,
+      "sha256": "f0da632a6d4196fa266622eefb82e1a0971e67e78a80ab6399a4163a6f8e53dc"
+    },
+    {
+      "path": "reference/root_midpoint_python.nwk",
+      "size": 4657,
+      "sha256": "292bcaf0898e941b837780fa87584f01a019fab1510c5ea0770201736350a81c"
+    },
+    {
+      "path": "reference/root_rtt_python.nwk",
+      "size": 4670,
+      "sha256": "12e7e12c577b2f2193efa94eba120ea60bd943091fde069aa3a0f51360ca3be3"
+    },
+    {
+      "path": "reference/root_to_tip_points.csv",
+      "size": 45748,
+      "sha256": "4cd95708013b1713f4dbe0efa85c5b9746f686cc26457b789c26de4cc0a5a18a"
+    },
+    {
+      "path": "reference/sampling_counts.csv",
+      "size": 112,
+      "sha256": "4d119b34328b6c413f9c5ccbcebc372ef962c25d0f2918444781c16e613cc2a9"
+    },
+    {
+      "path": "rescue/native/README.txt",
+      "size": 216,
+      "sha256": "a4c969be82833318e3f92ab0b98e800b9d58b9686a8f1d46e57ff7a8c0580922"
+    },
+    {
+      "path": "rescue/native/lesson.rds",
+      "size": 228312,
+      "sha256": "3018a583c2c704a8bdf67302652705078b594cd97f1f6aa8894362974201b73c"
+    },
+    {
+      "path": "run_without_rstudio.R",
+      "size": 492,
+      "sha256": "9038ea815fbe56a85397f6d9f3d7367e34a46c8ca31fb7d0cb545bcf406d4b76"
+    },
+    {
+      "path": "tests/browser_harness.cjs",
+      "size": 4606,
+      "sha256": "1c09302da45738761462c5a1b3797d5e47fd184783546e9fc0553a97fc2cd69f"
+    },
+    {
+      "path": "tests/smoke.R",
+      "size": 4289,
+      "sha256": "e063f7ab92d1134b74e0ac7af26229df62e028a569bddcfc5ffd9dae1744d7b2"
+    },
+    {
+      "path": "validation/NATIVE_READY.txt",
+      "size": 1807,
+      "sha256": "d27799260913b392547b40d19b13148f27227942d0e9f8d3953125cf08e0a892"
+    },
+    {
+      "path": "validation/VALIDATION.md",
+      "size": 944,
+      "sha256": "345379f33c700ba838aa851a9b8e8167f1406a5377cb4bf44ea9cd2a100e4303"
+    },
+    {
+      "path": "validation/audit_summary.json",
+      "size": 2197,
+      "sha256": "63b3b15469eb55ae742fdf5d5e5930dd52fe5f2a7cfe8499e90d659c1a96734a"
+    },
+    {
+      "path": "validation/browser_harness.json",
+      "size": 1312,
+      "sha256": "0147dac0bd35c4be35b487364ea5871008a275ec3cc013a757b1b86a8bb5d775"
+    },
+    {
+      "path": "validation/environment.txt",
+      "size": 58,
+      "sha256": "647926c71c3bbd1feacc1c96bb10d7e1ff536183f108231a79cee6ce84e858c0"
+    },
+    {
+      "path": "validation/native_run.log",
+      "size": 18311,
+      "sha256": "1dfa9c1f5b880bc6aa0e0a48afc91d07334497553b36fb5a9b2a37535c9864a5"
+    },
+    {
+      "path": "validation/native_tests.csv",
+      "size": 316,
+      "sha256": "8f6fddaa6da5a90571dcd9a3b4d12c58e2d3939507d6a406d08d530d4432a37d"
+    },
+    {
+      "path": "validation/packages.csv",
+      "size": 90,
+      "sha256": "d58e43cbb6d23a241cad655e8ca3d18d696d32a06eb4acf7c672a9b7f297aacc"
+    },
+    {
+      "path": "validation/preparation_v1.1/VALIDATION.md",
+      "size": 1996,
+      "sha256": "75dffc46c8a0956a2b2a9b61f39691aa94d33f4a671d76cc5da1228447663dc3"
+    },
+    {
+      "path": "validation/preparation_v1.1/apt_attempt.log",
+      "size": 815,
+      "sha256": "7972bc4e8311664983b51f56c259582423d59ef645921c65f7bcd64228ecac36"
+    },
+    {
+      "path": "validation/preparation_v1.1/browser_recheck.json",
+      "size": 387,
+      "sha256": "de5c650bab97fed44ff42e4a17b434a5ea47e013b086544bb5ffffde6e7af205"
+    },
+    {
+      "path": "validation/preparation_v1.1/browser_tests.json",
+      "size": 879,
+      "sha256": "6120ec5e602ad1707e477e0a8f6c01802476b4fb2580e652f71739bd76b2d475"
+    },
+    {
+      "path": "validation/preparation_v1.1/independent_recheck.json",
+      "size": 495,
+      "sha256": "10969fef2df0c39cd2d18f8dd29587cdc6bcac09d7cdda54ac0c0c80700a07b0"
+    },
+    {
+      "path": "validation/preparation_v1.1/pdf_preflight.json",
+      "size": 502,
+      "sha256": "0d7c942a3ca22f7bd36609f86d3d1354a3a77d62f7492c86c40335eae4015320"
+    },
+    {
+      "path": "validation/preparation_v1.1/pdf_recheck.json",
+      "size": 708,
+      "sha256": "286219b5693f2d5d26fe697ade07191cbf1a29dd3cc7f944817fc1bc87731766"
+    },
+    {
+      "path": "validation/preparation_v1.1/regeneration_test.json",
+      "size": 636,
+      "sha256": "1da5f5b8d568b42b009551114196ae92ca08282ee808dd0f584ebc80856079cd"
+    },
+    {
+      "path": "validation/preparation_v1.1/software.json",
+      "size": 207,
+      "sha256": "ae6c81e37ce431a383fd429e869a1f1fd63e3633d2d3d431f4e8fcaafc1d4b8f"
+    },
+    {
+      "path": "validation/preparation_v1.1/static_R_review.json",
+      "size": 920,
+      "sha256": "fea562abff86a4673fc735d1d670cd6216916a7bbc8cc3cde0bae2542534b496"
+    },
+    {
+      "path": "validation/python_reference_validation.json",
+      "size": 762,
+      "sha256": "c02e321f6c4a01c464edb3a944716c24712c8317b311ca561f1d26341280a345"
+    },
+    {
+      "path": "validation/smoke_checks.csv",
+      "size": 776,
+      "sha256": "0bfdbcc483bab36868a84a3bb59dbc947803b3eae71a20bdd5f805c84b7c2c8a"
+    }
+  ]
+}

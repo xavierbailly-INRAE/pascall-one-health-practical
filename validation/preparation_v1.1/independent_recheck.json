@@ -1,0 +1,30 @@
+[
+  {
+    "file": "reference/root_to_tip_points.csv",
+    "passed": true
+  },
+  {
+    "file": "reference/regression_summary.csv",
+    "passed": true
+  },
+  {
+    "file": "reference/alignment_coverage.csv",
+    "passed": true
+  },
+  {
+    "file": "reference/sampling_counts.csv",
+    "passed": true
+  },
+  {
+    "file": "data/alignment.fasta",
+    "passed": true
+  },
+  {
+    "file": "data/metadata.csv",
+    "passed": true
+  },
+  {
+    "file": "data/ml_F84_I_G_164.nwk",
+    "passed": true
+  }
+]

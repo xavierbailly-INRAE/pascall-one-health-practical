@@ -1,0 +1,28 @@
+{
+  "source": "PYTHON DESCRIPTIVE REFERENCES ONLY; no clock dating performed",
+  "reference_root_search": {
+    "objective": "maximum positive Pearson correlation, all 164 Date_av dates",
+    "correlation": 0.8413364288845442,
+    "edge_u": 25,
+    "edge_v": 31,
+    "edge_length": 0.00094467,
+    "offset_from_u": 0.00045022230653101917
+  },
+  "checks": [
+    {
+      "test": "rtt: patristic distances invariant",
+      "passed": true,
+      "max_abs_error": 8.673617379884035e-19
+    },
+    {
+      "test": "midpoint: patristic distances invariant",
+      "passed": true,
+      "max_abs_error": 8.673617379884035e-19
+    }
+  ],
+  "software": {
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3"
+  }
+}

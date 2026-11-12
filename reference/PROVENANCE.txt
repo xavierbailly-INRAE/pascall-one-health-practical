@@ -1,0 +1,4 @@
+PYTHON DESCRIPTIVE REFERENCE, not native ape/treedater output.
+Rooting and root-to-tip distances recomputed from the supplied ML tree.
+Linear fits are descriptive OLS; no p-values or conventional confidence intervals.
+No dated tree or inferred branch rates are fabricated.

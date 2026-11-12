@@ -1,0 +1,180 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Pascall v1.2 complete R code</title><link rel="stylesheet" href="print.css"><style>pre{font-size:8pt;line-height:1.2;padding:7pt;white-space:pre-wrap;overflow-wrap:anywhere}h1{font-size:20pt}</style></head><body><div class="eyebrow">PASCALL PRACTICAL v1.2</div><h1>Complete student R script</h1><p>Generated from Pascall_student.R. Execute complete numbered blocks in the extracted project, not code copied from this PDF.</p><pre># PASCALL 2020 | v1.2 | WHEN GENETIC TIME AND CALENDAR TIME DISAGREE
+# M2 ONE HEALTH | 55-60 MINUTES | Execute ONE numbered block at a time.
+# Before class: 00_install_check.R then RUN_R_CHECKS.R.
+# Normal route: LIVE R calculations. NO automatic substitution with cached results.
+# Explicit rescue: Pascall_rescue.R or docs/Pascall_offline_EN.html.
+
+# BLOCK 1 - OBSERVATIONS AND SAMPLING (8 min) -----------------------------
+source(&#x27;R/housekeeping.R&#x27;,local=TRUE)
+check_required(c(&#x27;ape&#x27;,&#x27;phytools&#x27;,&#x27;treedater&#x27;))
+verify_inputs()
+set.seed(20261112)
+dir.create(&#x27;runs&#x27;,showWarnings=FALSE)
+run_dir &lt;- tempfile(&#x27;live_&#x27;,tmpdir=&#x27;runs&#x27;); dir.create(run_dir)
+cat(&#x27;DATA SOURCE: LIVE R INFERENCE\n&#x27;)
+Pascall_data &lt;- read.csv(&#x27;data/metadata.csv&#x27;,stringsAsFactors=FALSE)
+Pascall_alignment &lt;- ape::read.dna(&#x27;data/alignment.fasta&#x27;,format=&#x27;fasta&#x27;)
+Pascall_ML &lt;- ape::read.tree(&#x27;data/ml_F84_I_G_164.nwk&#x27;)
+Pascall_data$year &lt;- decimal_year(Pascall_data$Date_av)
+Pascall_data$outbreak &lt;- factor(ifelse(Pascall_data$year&lt;2010,&#x27;first&#x27;,&#x27;second&#x27;),
+                                levels=c(&#x27;first&#x27;,&#x27;second&#x27;))
+Pascall_sampling_time &lt;- setNames(Pascall_data$year,Pascall_data$ID)
+Pascall_seqlen &lt;- ncol(Pascall_alignment)  # Measured: 18079, NOT hard-coded 18076.
+stopifnot(nrow(Pascall_data)==164L, !anyDuplicated(Pascall_data$ID),
+          !anyNA(Pascall_data$year),
+          setequal(rownames(Pascall_alignment),Pascall_data$ID),
+          setequal(Pascall_ML$tip.label,Pascall_data$ID))
+head(Pascall_data[,c(&#x27;ID&#x27;,&#x27;Date_min&#x27;,&#x27;Date_max&#x27;,&#x27;Date_av&#x27;,&#x27;country&#x27;)])
+print(dim(Pascall_alignment)); print(table(Pascall_data$outbreak))
+print(table(Pascall_data$country,Pascall_data$outbreak))
+# Date_av is supplied as a representative date, not always an exact collection date.
+# Preserve the raw date bounds. UKG07159 has an invalid upper bound (2007-02-30).
+invalid_max &lt;- is.na(as.Date(Pascall_data$Date_max,format=&#x27;%Y-%m-%d&#x27;))
+print(Pascall_data[invalid_max,c(&#x27;ID&#x27;,&#x27;Date_min&#x27;,&#x27;Date_max&#x27;,&#x27;Date_av&#x27;)])
+begin_plot(&#x27;01_sampling&#x27;)
+barplot(table(factor(floor(Pascall_data$year),levels=2006:2018)),
+        las=2,xlab=&#x27;Sampling year&#x27;,ylab=&#x27;Number of sequences (NOT incidence)&#x27;,
+        main=&#x27;Observed sampling: two separated periods&#x27;)
+end_plot()
+# Q1. What was sampled, and when? Does a missing sampled year establish absence of infection?
+# This teaching alignment contains segments 1-7, 9 and 10. Segment 8 remains excluded.
+
+# BLOCK 2 - ROOT THE SUPPLIED ML TREE (10 min) ----------------------------
+# The selected tree is the old practical&#x27;s tree 32: run 16, F84+I+Gamma.
+# We supply the ML estimate; we do not rerun PhyML during this session.
+Pascall_unrooted &lt;- ape::unroot(Pascall_ML)
+roots &lt;- list(
+  rtt=ape::rtt(Pascall_unrooted,
+      tip.dates=Pascall_sampling_time[Pascall_unrooted$tip.label],
+      objective=&#x27;correlation&#x27;,opt.tol=1e-10,ncpu=1),
+  midpoint=phytools::midpoint_root(Pascall_ML)
+)
+rooting &lt;- &#x27;rtt&#x27;  # Optional comparison: &#x27;midpoint&#x27;; rerun blocks 2-5 after changing it.
+if (!rooting %in% names(roots)) stop(&#x27;Choose rtt or midpoint.&#x27;)
+Pascall_tree &lt;- ape::ladderize(roots[[rooting]])
+i &lt;- match(Pascall_tree$tip.label,Pascall_data$ID)
+cohort &lt;- Pascall_data$outbreak[i]
+begin_plot(&#x27;02_rooted_tree&#x27;)
+plot(Pascall_tree,show.tip.label=FALSE,main=paste(&#x27;ML tree | root:&#x27;,rooting))
+ape::tiplabels(pch=ifelse(cohort==&#x27;first&#x27;,1,17),cex=0.65)
+ape::add.scale.bar(length=0.0005)
+legend(&#x27;topleft&#x27;,c(&#x27;2006-2009&#x27;,&#x27;2015-2018&#x27;),pch=c(1,17),bty=&#x27;n&#x27;,cex=0.8)
+mtext(&#x27;Branch lengths: substitutions/site. This is not yet a dated tree.&#x27;,1,2.5,cex=0.8)
+end_plot()
+# Q2. Where are the later samples? Does rooting convert substitutions into years?
+# This retains the old TP&#x27;s all-date rooting. The article used first-outbreak rooting.
+
+# BLOCK 3 - CALCULATE TEMPORAL SIGNAL, NOT JUST A P-VALUE (12 min) ---------
+year &lt;- Pascall_sampling_time[Pascall_tree$tip.label]
+distance &lt;- ape::node.depth.edgelength(Pascall_tree)[seq_len(ape::Ntip(Pascall_tree))]
+rtt_data &lt;- data.frame(ID=Pascall_tree$tip.label,year=unname(year),
+                       distance=distance,outbreak=cohort)
+fit_all &lt;- lm(distance ~ year,data=rtt_data)
+fit_first &lt;- lm(distance ~ year,data=rtt_data,subset=outbreak==&#x27;first&#x27;)
+fit_second &lt;- lm(distance ~ year,data=rtt_data,subset=outbreak==&#x27;second&#x27;)
+clock_diagnostic &lt;- data.frame(group=c(&#x27;pooled&#x27;,&#x27;first&#x27;,&#x27;second&#x27;),
+  slope=c(coef(fit_all)[2],coef(fit_first)[2],coef(fit_second)[2]),
+  descriptive_R2=c(summary(fit_all)$r.squared,summary(fit_first)$r.squared,
+                    summary(fit_second)$r.squared),row.names=NULL)
+print(clock_diagnostic)
+begin_plot(&#x27;03_clock_pooled&#x27;)
+plot(rtt_data$year,rtt_data$distance,pch=ifelse(cohort==&#x27;first&#x27;,1,17),
+     xlab=&#x27;Sampling year&#x27;,ylab=&#x27;Root-to-tip distance (substitutions/site)&#x27;,
+     main=&#x27;One pooled line: what might it hide?&#x27;)
+abline(fit_all,lwd=2)
+legend(&#x27;topleft&#x27;,c(&#x27;2006-2009&#x27;,&#x27;2015-2018&#x27;),pch=c(1,17),bty=&#x27;n&#x27;)
+end_plot()
+begin_plot(&#x27;04_clock_by_outbreak&#x27;)
+plot(rtt_data$year,rtt_data$distance,pch=ifelse(cohort==&#x27;first&#x27;,1,17),
+     xlab=&#x27;Sampling year&#x27;,ylab=&#x27;Root-to-tip distance (substitutions/site)&#x27;,
+     main=&#x27;Separate descriptive fits: compare slopes AND intercepts&#x27;)
+x_first &lt;- seq(min(year[cohort==&#x27;first&#x27;]),max(year[cohort==&#x27;first&#x27;]),length.out=50)
+x_second &lt;- seq(min(year[cohort==&#x27;second&#x27;]),max(year[cohort==&#x27;second&#x27;]),length.out=50)
+lines(x_first,predict(fit_first,newdata=data.frame(year=x_first)),lwd=2)
+lines(x_second,predict(fit_second,newdata=data.frame(year=x_second)),lwd=2,lty=2)
+legend(&#x27;topleft&#x27;,c(&#x27;2006-2009&#x27;,&#x27;2015-2018&#x27;),pch=c(1,17),lty=c(1,2),bty=&#x27;n&#x27;)
+end_plot()
+# Q3. Can both outbreaks evolve while one continuous clock across the gap fits poorly?
+# Tips share ancestry; OLS p-values and ordinary confidence intervals are not valid
+# as independent evidence here. These fits are descriptive, not the article&#x27;s models.
+# An intercept extrapolation is not a directly observed date or a dated ancestor.
+
+# BLOCK 4 - FIT STRICT AND RELAXED CLOCKS (15 min) ------------------------
+# Same rooted input and dates for both fits. Rate unit: substitutions/site/YEAR.
+# Initial rates are estimated automatically; numStartConditions requests extra starts.
+# treedater may try more candidates than this number. Keep warnings visible.
+Pascall_dater_strict &lt;- treedater::dater(
+  tre=Pascall_tree,sts=Pascall_sampling_time[Pascall_tree$tip.label],s=Pascall_seqlen,
+  clock=&#x27;strict&#x27;,minblen=1/365.25,
+  temporalConstraints=TRUE,numStartConditions=3,ncpu=1,quiet=FALSE)
+Pascall_dater_relaxed &lt;- treedater::dater(
+  tre=Pascall_tree,sts=Pascall_sampling_time[Pascall_tree$tip.label],s=Pascall_seqlen,
+  clock=&#x27;uncorrelated&#x27;,minblen=1/365.25,
+  temporalConstraints=TRUE,numStartConditions=3,ncpu=1,quiet=FALSE)
+check_dated(Pascall_dater_strict,Pascall_sampling_time)
+check_dated(Pascall_dater_relaxed,Pascall_sampling_time)
+# Numerical minimum branch duration: one day; NOT date precision or a biological claim.
+clock_comparison &lt;- data.frame(clock=c(&#x27;strict&#x27;,&#x27;uncorrelated&#x27;),
+  root_year=c(Pascall_dater_strict$timeOfMRCA,Pascall_dater_relaxed$timeOfMRCA),
+  mean_rate=c(Pascall_dater_strict$mean.rate,Pascall_dater_relaxed$mean.rate),
+  rate_CV=c(Pascall_dater_strict$coef_of_variation,
+            Pascall_dater_relaxed$coef_of_variation))
+print(clock_comparison)
+for (model in c(&#x27;strict&#x27;,&#x27;relaxed&#x27;)) {
+  td &lt;- if (model==&#x27;strict&#x27;) Pascall_dater_strict else Pascall_dater_relaxed
+  begin_plot(paste0(&#x27;05_dated_&#x27;,model))
+  ape::plot.phylo(td,show.tip.label=FALSE,main=paste(&#x27;Time tree |&#x27;,model,&#x27;clock&#x27;))
+  marks &lt;- pretty(range(td$timeOfMRCA,td$sts))
+  axis(1,at=marks-td$timeOfMRCA,labels=marks)
+  mtext(&#x27;Calendar year | conditional point estimates&#x27;,1,2.5,cex=0.8)
+  end_plot()
+}
+# Q4. What changes when rates can differ between branches? Is flexibility itself proof?
+# treedater&#x27;s uncorrelated clock is NOT BEAST&#x27;s lognormal relaxed-clock analysis.
+
+# BLOCK 5 - IDENTIFY THE BRANCH, INTERPRET THE EVIDENCE (15 min) -----------
+td &lt;- Pascall_dater_relaxed
+late_ids &lt;- Pascall_data$ID[Pascall_data$outbreak==&#x27;second&#x27;]
+late_node &lt;- ape::getMRCA(td,late_ids)
+stopifnot(ape::is.monophyletic(td,late_ids))
+stem_edge &lt;- which(td$edge[,2]==late_node)
+stopifnot(length(stem_edge)==1L)
+# Native branch-rate estimates are omegas. edge.p contains diagnostic probabilities.
+branch_rates &lt;- td$omegas
+stopifnot(length(branch_rates)==nrow(td$edge),all(branch_rates&gt;0))
+begin_plot(&#x27;06_branch_rates&#x27;)
+phytools::plotBranchbyTrait(plain_phylo(td),log10(branch_rates),mode=&#x27;edges&#x27;,
+    show.tip.label=FALSE,legend=TRUE,prompt=FALSE,
+    title=&#x27;log10 rate: substitutions/site/year&#x27;)
+end_plot()
+# Keep this edge order. Ladderizing without realigning rates could miscolour branches.
+node_year &lt;- td$timeOfMRCA + ape::node.depth.edgelength(td)
+branch_table &lt;- data.frame(parent=td$edge[,1],child=td$edge[,2],
+  start_year=node_year[td$edge[,1]],end_year=node_year[td$edge[,2]],
+  duration_years=td$edge.length,genetic_length=td$intree$edge.length,
+  fitted_rate=branch_rates,diagnostic_CDF=td$edge.p)
+print(branch_table[stem_edge,])
+cat(&#x27;Stem rate / median fitted branch rate:&#x27;,
+    branch_rates[stem_edge]/median(branch_rates),&#x27;\n&#x27;)
+# Q5. Separate: (a) observed pattern, (b) model-dependent inference, (c) causal hypothesis.
+# Compare your result with the ARTICLE&#x27;s Fig. 3, not with a fabricated expected value.
+# These data alone do not identify a particular source of reintroduction.
+# Conclude with one supported finding, one limitation and one additional evidence need.
+
+lesson &lt;- list(source=&#x27;NATIVE R: ape + treedater + phytools&#x27;,version=&#x27;1.2&#x27;,
+  metadata=Pascall_data,alignment_length=Pascall_seqlen,ml=Pascall_ML,roots=roots,
+  rooting=rooting,rooted=Pascall_tree,rtt_data=rtt_data,
+  diagnostic=clock_diagnostic,strict=Pascall_dater_strict,relaxed=Pascall_dater_relaxed,
+  clock_comparison=clock_comparison,branch_table=branch_table,stem_edge=stem_edge,
+  input_md5=read.csv(&#x27;data/INPUT_MD5.csv&#x27;,stringsAsFactors=FALSE))
+saveRDS(lesson,file.path(run_dir,&#x27;lesson.rds&#x27;))
+write.csv(rtt_data,file.path(run_dir,&#x27;root_to_tip.csv&#x27;),row.names=FALSE)
+write.csv(clock_diagnostic,file.path(run_dir,&#x27;clock_diagnostic.csv&#x27;),row.names=FALSE)
+write.csv(clock_comparison,file.path(run_dir,&#x27;clock_comparison.csv&#x27;),row.names=FALSE)
+write.csv(branch_table,file.path(run_dir,&#x27;branch_rates.csv&#x27;),row.names=FALSE)
+ape::write.tree(plain_phylo(td),file.path(run_dir,&#x27;dated_relaxed.nwk&#x27;),digits=12)
+writeLines(c(lesson$source,paste(&#x27;rooting:&#x27;,rooting),capture.output(sessionInfo())),
+           file.path(run_dir,&#x27;provenance.txt&#x27;))
+writeLines(run_dir,&#x27;runs/latest_run.txt&#x27;)
+cat(&#x27;Live results saved in:&#x27;,run_dir,&#x27;\n&#x27;)
+</pre></body></html>

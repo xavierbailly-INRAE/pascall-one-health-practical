@@ -1,0 +1,36 @@
+READY: complete native R path executed and validated.
+Run directory: runs/live_34f0a5ebb
+R version 4.5.2 (2025-10-31)
+Platform: x86_64-pc-linux-gnu
+Running under: Ubuntu 26.04.1 LTS
+
+Matrix products: default
+BLAS:   /usr/lib/x86_64-linux-gnu/blas/libblas.so.3.12.1 
+LAPACK: /usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3.12.1;  LAPACK version 3.12.0
+
+locale:
+ [1] LC_CTYPE=C.UTF-8       LC_NUMERIC=C           LC_TIME=C.UTF-8       
+ [4] LC_COLLATE=C.UTF-8     LC_MONETARY=C.UTF-8    LC_MESSAGES=C.UTF-8   
+ [7] LC_PAPER=C.UTF-8       LC_NAME=C              LC_ADDRESS=C          
+[10] LC_TELEPHONE=C         LC_MEASUREMENT=C.UTF-8 LC_IDENTIFICATION=C   
+
+time zone: Europe/Paris
+tzcode source: system (glibc)
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+loaded via a namespace (and not attached):
+ [1] doParallel_1.0.17       cli_3.6.6               nlme_3.1-168           
+ [4] rlang_1.2.0             generics_0.1.4          clusterGeneration_1.3.8
+ [7] scatterplot3d_0.3-45    quadprog_1.5-8          grid_4.5.2             
+[10] expm_1.0-0              MASS_7.3-65             lifecycle_1.0.5        
+[13] ape_5.8-1               foreach_1.5.2           numDeriv_2016.8-1.1    
+[16] treedater_2.0.0         compiler_4.5.2          igraph_2.3.4           
+[19] codetools_0.2-20        coda_0.19-4.1           pkgconfig_2.0.3        
+[22] Rcpp_1.1.1-1            DEoptim_2.2-8           fastmatch_1.1-8        
+[25] optimParallel_1.0-2     maps_3.4.3              phangorn_2.12.1        
+[28] lattice_0.22-9          digest_0.6.39           mnormt_2.1.2           
+[31] parallel_4.5.2          magrittr_2.0.5          Matrix_1.7-4           
+[34] tools_4.5.2             iterators_1.0.14        combinat_0.0-8         
+[37] phytools_2.5-2         

@@ -1,0 +1,70 @@
+{
+  "all_passed": true,
+  "count": 16,
+  "checks": [
+    {
+      "name": "initial step",
+      "passed": true
+    },
+    {
+      "name": "navigate 1",
+      "passed": true
+    },
+    {
+      "name": "navigate 2",
+      "passed": true
+    },
+    {
+      "name": "navigate 3",
+      "passed": true
+    },
+    {
+      "name": "navigate 4",
+      "passed": true
+    },
+    {
+      "name": "navigate 5",
+      "passed": true
+    },
+    {
+      "name": "navigation boundaries",
+      "passed": true
+    },
+    {
+      "name": "rtt pooled OLS and selector consistency",
+      "passed": true
+    },
+    {
+      "name": "rtt separate OLS and selector consistency",
+      "passed": true
+    },
+    {
+      "name": "midpoint pooled OLS and selector consistency",
+      "passed": true
+    },
+    {
+      "name": "midpoint separate OLS and selector consistency",
+      "passed": true
+    },
+    {
+      "name": "tree selection updates diagnostic",
+      "passed": true
+    },
+    {
+      "name": "notes survive reload",
+      "passed": true
+    },
+    {
+      "name": "UTF-8 export with five notes and choices",
+      "passed": true
+    },
+    {
+      "name": "blocked storage leaves UI functional",
+      "passed": true
+    },
+    {
+      "name": "invalid stored JSON leaves UI functional",
+      "passed": true
+    }
+  ]
+}

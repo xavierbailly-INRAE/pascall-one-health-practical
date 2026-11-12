@@ -1,0 +1,36 @@
+{
+  "tests": [
+    {
+      "name": "five tabs, code blocks and notes",
+      "passed": true
+    },
+    {
+      "name": "both reference root images load",
+      "passed": true
+    },
+    {
+      "name": "browser OLS matches independent Python for both roots/modes",
+      "passed": true,
+      "max_abs_error": 3.042011087472929e-14
+    },
+    {
+      "name": "local notes export contains all five answers",
+      "passed": true
+    },
+    {
+      "name": "all embedded images load; no external requests",
+      "passed": true
+    },
+    {
+      "name": "mobile 390px, all stages, no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "no JavaScript errors",
+      "passed": true
+    }
+  ],
+  "load_method": "set_content: local file navigation blocked by environment policy; identical standalone HTML content tested",
+  "errors": [],
+  "external_requests": []
+}

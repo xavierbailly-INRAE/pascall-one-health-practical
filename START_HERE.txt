@@ -1,0 +1,17 @@
+PASCALL PRACTICAL — VERSION 1.2 — 12 NOVEMBER 2026
+
+Browser: https://xavierbailly-inrae.github.io/pascall-one-health-practical/
+Offline: docs/Pascall_offline_EN.html. Five stages; export notes before leaving.
+The browser uses labelled Python references and published figures; it does not run R.
+
+R: extract the COMPLETE ZIP and open Pascall_student.Rproj.
+Before class: source("00_install_check.R"), then source("RUN_R_CHECKS.R").
+Wait for READY; execute Pascall_student.R one full numbered block at a time.
+Native rescue: source("Pascall_rescue.R").
+Reference only: options(pascall.rescue_mode="reference"); source("Pascall_rescue.R").
+
+Student handout: docs/Pascall_student_EN.pdf
+Installation: docs/Installation_EN.pdf
+Complete code: Pascall_student.R; printed copy: docs/Pascall_code_EN.pdf
+Figures: docs/Pascall_offline_figures_EN.pdf
+Validation: validation/VALIDATION.md

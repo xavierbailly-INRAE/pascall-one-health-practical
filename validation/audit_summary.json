@@ -1,0 +1,120 @@
+{
+  "n_samples": 164,
+  "n_countries": 10,
+  "uncertain_dates": 39,
+  "years": {
+    "2006": 23,
+    "2007": 31,
+    "2008": 37,
+    "2009": 4,
+    "2015": 25,
+    "2016": 12,
+    "2017": 28,
+    "2018": 4
+  },
+  "segments": [
+    {
+      "segment": 1,
+      "n": 164,
+      "length": 3944,
+      "ids_match": true,
+      "gap_fraction": 0.002340696581408005
+    },
+    {
+      "segment": 2,
+      "n": 164,
+      "length": 2939,
+      "ids_match": true,
+      "gap_fraction": 0.003390069627133835
+    },
+    {
+      "segment": 3,
+      "n": 164,
+      "length": 2772,
+      "ids_match": true,
+      "gap_fraction": 0.0031587653538873053
+    },
+    {
+      "segment": 4,
+      "n": 164,
+      "length": 1981,
+      "ids_match": true,
+      "gap_fraction": 0.0043923369571908745
+    },
+    {
+      "segment": 5,
+      "n": 164,
+      "length": 1777,
+      "ids_match": true,
+      "gap_fraction": 0.007401485100951178
+    },
+    {
+      "segment": 6,
+      "n": 164,
+      "length": 1637,
+      "ids_match": true,
+      "gap_fraction": 0.006931924847654097
+    },
+    {
+      "segment": 7,
+      "n": 164,
+      "length": 1156,
+      "ids_match": true,
+      "gap_fraction": 0.010074689847244493
+    },
+    {
+      "segment": 8,
+      "n": 162,
+      "length": 1296,
+      "ids_match": false,
+      "gap_fraction": 0.14215153939948177
+    },
+    {
+      "segment": 9,
+      "n": 164,
+      "length": 1051,
+      "ids_match": true,
+      "gap_fraction": 0.013709359262955141
+    },
+    {
+      "segment": 10,
+      "n": 164,
+      "length": 822,
+      "ids_match": true,
+      "gap_fraction": 0.025005934365913002
+    }
+  ],
+  "alignment_length": 18079,
+  "concat_order": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10
+  ],
+  "tree_count": 56,
+  "model_count": 28,
+  "pair_duplicate": true,
+  "tree_32": {
+    "run": 16,
+    "model": "F84+I+G",
+    "n_taxa": 164,
+    "loglik": -32481.10238,
+    "k_ape_phymltest": 7,
+    "AIC_ape_convention": 64976.20476,
+    "tree_line": 32
+  },
+  "all_inputs_ids_match": true,
+  "concat_identity_verified": true,
+  "invalid_dates_preserved": [
+    {
+      "column": "Date_max",
+      "ID": "UKG07159",
+      "Date_max": "2007-02-30"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+"test","passed"
+"n_samples",TRUE
+"alignment_length",TRUE
+"tip_identity",TRUE
+"root_distances_invariant",TRUE
+"cohort_sizes",TRUE
+"fits_finite",TRUE
+"strict_single_rate",TRUE
+"late_clade",TRUE
+"stem_unique",TRUE
+"rates_positive",TRUE
+"valid_diagnostic_probabilities",TRUE
+"figures_written",TRUE
+"lesson_written",TRUE

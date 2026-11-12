@@ -1,0 +1,30 @@
+[
+  {
+    "file": "root_to_tip_points.csv",
+    "independent_regeneration_identical": true
+  },
+  {
+    "file": "regression_summary.csv",
+    "independent_regeneration_identical": true
+  },
+  {
+    "file": "sampling_counts.csv",
+    "independent_regeneration_identical": true
+  },
+  {
+    "file": "alignment_coverage.csv",
+    "independent_regeneration_identical": true
+  },
+  {
+    "file": "alignment.fasta",
+    "independent_regeneration_identical": true
+  },
+  {
+    "file": "ml_F84_I_G_164.nwk",
+    "independent_regeneration_identical": true
+  },
+  {
+    "file": "metadata.csv",
+    "independent_regeneration_identical": true
+  }
+]
